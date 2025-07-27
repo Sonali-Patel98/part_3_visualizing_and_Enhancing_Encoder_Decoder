@@ -1,0 +1,31 @@
+import matplotlib.pyplot as plt
+
+# Example: Replace with your own training history
+history = model.history.history
+
+# Plotting Loss
+plt.figure(figsize=(12, 5))
+
+plt.subplot(1, 2, 1)
+plt.plot(history['loss'], label='Training Loss', color='blue')
+if 'val_loss' in history:
+    plt.plot(history['val_loss'], label='Validation Loss', color='red')
+plt.title('Loss Curve')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.legend()
+plt.grid(True)
+
+# Plotting Accuracy
+plt.subplot(1, 2, 2)
+plt.plot(history['accuracy'], label='Training Accuracy', color='blue')
+if 'val_accuracy' in history:
+    plt.plot(history['val_accuracy'], label='Validation Accuracy', color='red')
+plt.title('Accuracy Curve')
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.grid(True)
+
+plt.tight_layout()
+plt.show()
