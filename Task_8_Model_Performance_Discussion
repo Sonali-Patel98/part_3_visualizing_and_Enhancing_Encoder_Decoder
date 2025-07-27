@@ -1,0 +1,8 @@
+1. What are the challenges in training sequence-to-sequence models?
+Challenges in training sequence-to-sequence models:They struggle with long-term dependencies and vanishing gradients, require large quality parallel datasets, handle large vocabularies, and face difficulty aligning source and target sequences.
+
+2. What does a “bad” translation look like and why might it happen?
+Bad translations often have incorrect grammar, missing or extra words, or distorted meaning. This usually happens due to limited training data, unknown words, or the model’s inability to understand context.
+
+3.How can the model be improved further?
+Improvements include using attention mechanisms, bidirectional encoders, training on larger and cleaner datasets, applying beam search during decoding, and leveraging pretrained transformer models.
